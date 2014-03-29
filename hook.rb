@@ -6,10 +6,11 @@ unless ENV['ACTION'].nil?
    if ENV['ACTION'] == 'download'
      #$stderr.puts ENV.inspect
      filename = ENV['ARGUMENT']
+     folder = File.dirname(File.expand_path(__FILE__))
 
-     FileUtils.mkdir_p 'photos'
+     FileUtils.mkdir_p File.join(folder, 'photos/')
 
-     FileUtils.mv filename, File.join('photos/')
+     FileUtils.mv File.join(folder, filename), File.join(folder, 'photos/')
 
    end
 end

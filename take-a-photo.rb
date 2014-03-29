@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-gphoto2 = "gphoto2"
+gphoto2 = "/usr/local/bin/gphoto2"
 usbid   = "--port=usb:253,003"
 folder  = "--folder=/store_00010001/DCIM/100NCD50"
 

@@ -9,7 +9,7 @@ unless ENV['ACTION'].nil?
 
      FileUtils.mkdir_p 'photos'
 
-     FileUtils.mv filename File.join('photo')
+     FileUtils.mv filename, File.join('photo')
 
    end
 end

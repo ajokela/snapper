@@ -10,7 +10,7 @@ unless ENV['ACTION'].nil?
 
      FileUtils.mkdir_p File.join(folder, 'photos/')
 
-     FileUtils.mv File.join(`pwd`, filename), File.join(folder, 'photos/')
+     FileUtils.mv File.join(`pwd`.chomp, filename), File.join(folder, 'photos/')
 
    end
 end
